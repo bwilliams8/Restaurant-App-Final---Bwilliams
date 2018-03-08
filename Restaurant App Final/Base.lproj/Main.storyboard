@@ -1,24 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Restaurant_App_Final" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Vlh-bP-VeC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wooden Spoon Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-oF-57U">
+                                <rect key="frame" x="0.0" y="142" width="228" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="4" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(We got spoons!)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URf-wc-rRc">
+                                <rect key="frame" x="16" y="192" width="138" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="4" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgZ-9b-Fq6" customClass="RoundButton" customModule="Restaurant_App_Final" customModuleProvider="target">
+                                <rect key="frame" x="16" y="397" width="137" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
+                                <size key="titleShadowOffset" width="4" height="1"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="k5I-I5-POx" kind="show" id="ilB-Vv-bZ1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vlh-bP-VeC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2TR-ef-gZX"/>
+                            <constraint firstItem="Vlh-bP-VeC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IAN-ci-py8"/>
+                            <constraint firstItem="Vlh-bP-VeC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RwQ-MN-oOr"/>
+                            <constraint firstItem="Vlh-bP-VeC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SX6-uw-eaZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="QgZ-9b-Fq6" id="hcn-be-gZl"/>
+                        <outlet property="descLabel" destination="URf-wc-rRc" id="8PI-dh-bSq"/>
+                        <outlet property="titleLabel" destination="URf-wc-rRc" id="eX6-rV-9cp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="XHk-Ny-PSA">
+            <objects>
+                <viewController id="k5I-I5-POx" customClass="MenuViewController" customModule="Restaurant_App_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qq3-Cl-kim">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodbackground" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-AZ-wJS">
+                                <rect key="frame" x="300" y="0.0" width="375" height="667"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-XO-tGJ">
+                                <rect key="frame" x="73" y="36.5" width="228" height="40.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40.5" id="UME-gm-ZZr"/>
+                                    <constraint firstAttribute="width" constant="228" id="krp-gA-blo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="4" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GW-0y-zKi">
+                                <rect key="frame" x="23" y="566" width="180" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="5Sp-Df-vFD"/>
+                                    <constraint firstAttribute="height" constant="41" id="gKM-zj-bM0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="4" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaZ-BC-Anj" customClass="RoundButton" customModule="Restaurant_App_Final" customModuleProvider="target">
+                                <rect key="frame" x="108" y="615" width="158" height="52"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UCx-QZ-l6C"/>
+                                    <constraint firstAttribute="width" constant="158" id="gwX-eP-O7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
+                                <size key="titleShadowOffset" width="4" height="1"/>
+                                <state key="normal" title="Purchase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVh-wY-2fm">
+                                <rect key="frame" x="271" y="566" width="78.5" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78.5" id="0hJ-Rf-mZ7"/>
+                                    <constraint firstAttribute="height" constant="41" id="QIZ-EQ-4kM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="4" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xfL-mn-afZ">
+                                <rect key="frame" x="23" y="85" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spaghetti and Meatballs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="867-TU-J7h">
+                                <rect key="frame" x="121" y="85" width="219" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seasoned meatballs on top of freshly-made spaghetti. Served with a robust tomato sauce." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-BS-N2o">
+                                <rect key="frame" x="121" y="110" width="219" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gSa-AZ-wJS" firstAttribute="top" secondItem="qq3-Cl-kim" secondAttribute="top" id="3TM-9T-a2h"/>
+                            <constraint firstItem="Y8c-XO-tGJ" firstAttribute="leading" secondItem="Iof-Bh-qZu" secondAttribute="leading" constant="73" id="7z0-gG-eXD"/>
+                            <constraint firstItem="EaZ-BC-Anj" firstAttribute="bottom" secondItem="Iof-Bh-qZu" secondAttribute="bottom" id="G5n-v1-btO"/>
+                            <constraint firstItem="Iof-Bh-qZu" firstAttribute="bottom" secondItem="PVh-wY-2fm" secondAttribute="bottom" constant="60" id="HUY-oN-vL3"/>
+                            <constraint firstItem="PVh-wY-2fm" firstAttribute="leading" secondItem="2GW-0y-zKi" secondAttribute="trailing" constant="68" id="Kye-C3-DKG"/>
+                            <constraint firstItem="gSa-AZ-wJS" firstAttribute="bottom" secondItem="Iof-Bh-qZu" secondAttribute="bottom" id="TT5-ou-LfP"/>
+                            <constraint firstItem="2GW-0y-zKi" firstAttribute="leading" secondItem="Iof-Bh-qZu" secondAttribute="leading" constant="23" id="gF6-oU-q8C"/>
+                            <constraint firstItem="EaZ-BC-Anj" firstAttribute="top" secondItem="2GW-0y-zKi" secondAttribute="bottom" constant="8" id="jJM-7P-6V6"/>
+                            <constraint firstItem="PVh-wY-2fm" firstAttribute="leading" secondItem="2GW-0y-zKi" secondAttribute="trailing" constant="68" id="jhg-a4-SxP"/>
+                            <constraint firstItem="gSa-AZ-wJS" firstAttribute="leading" secondItem="EaZ-BC-Anj" secondAttribute="trailing" constant="34" id="lse-wm-x2f"/>
+                            <constraint firstAttribute="trailing" secondItem="gSa-AZ-wJS" secondAttribute="trailing" constant="-300" id="mkZ-bq-UP0"/>
+                            <constraint firstItem="EaZ-BC-Anj" firstAttribute="leading" secondItem="Iof-Bh-qZu" secondAttribute="leading" constant="108" id="nlp-wT-DEK"/>
+                            <constraint firstItem="Iof-Bh-qZu" firstAttribute="trailing" secondItem="PVh-wY-2fm" secondAttribute="trailing" constant="25.5" id="rN9-mK-Agt"/>
+                            <constraint firstItem="Iof-Bh-qZu" firstAttribute="trailing" secondItem="Y8c-XO-tGJ" secondAttribute="trailing" constant="74" id="ru4-Cy-doi"/>
+                            <constraint firstItem="Y8c-XO-tGJ" firstAttribute="top" secondItem="Iof-Bh-qZu" secondAttribute="top" constant="16.5" id="sEn-Ox-Ebd"/>
+                            <constraint firstItem="gSa-AZ-wJS" firstAttribute="leading" secondItem="Iof-Bh-qZu" secondAttribute="leading" constant="300" id="tQO-b8-hoe"/>
+                            <constraint firstItem="EaZ-BC-Anj" firstAttribute="top" secondItem="2GW-0y-zKi" secondAttribute="bottom" constant="8" id="x5B-Sh-MGb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iof-Bh-qZu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvr-bS-gbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="foodbackground" width="5656" height="3771"/>
+    </resources>
 </document>
