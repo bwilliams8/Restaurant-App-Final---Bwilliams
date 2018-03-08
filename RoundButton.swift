@@ -30,3 +30,5 @@ class RoundButton: UIButton {
     }
 }
 
+
+//The purpose of this file is to create a new UIButton class, which is more customizable than default. Three IBInspectable values allow me to change the corner radius, and then add a border if i wish. 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164CEDC52051F7C0008C9610 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164CEDC42051F7C0008C9610 /* CheckoutView.swift */; };
 		16F2CF59204F4DF9006E9249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2CF58204F4DF9006E9249 /* AppDelegate.swift */; };
 		16F2CF5B204F4DF9006E9249 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2CF5A204F4DF9006E9249 /* HomeView.swift */; };
 		16F2CF5E204F4DF9006E9249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F2CF5C204F4DF9006E9249 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		164CEDC42051F7C0008C9610 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		16F2CF55204F4DF9006E9249 /* Restaurant App Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant App Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F2CF58204F4DF9006E9249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F2CF5A204F4DF9006E9249 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		16F2CF57204F4DF9006E9249 /* Restaurant App Final */ = {
 			isa = PBXGroup;
 			children = (
+				164CEDC42051F7C0008C9610 /* CheckoutView.swift */,
 				16F2CF6C204F550C006E9249 /* MenuViewController.swift */,
 				16F2CF6A204F50F5006E9249 /* RoundButton.swift */,
 				16F2CF58204F4DF9006E9249 /* AppDelegate.swift */,
@@ -144,6 +147,7 @@
 			files = (
 				16F2CF6B204F50F5006E9249 /* RoundButton.swift in Sources */,
 				16F2CF5B204F4DF9006E9249 /* HomeView.swift in Sources */,
+				164CEDC52051F7C0008C9610 /* CheckoutView.swift in Sources */,
 				16F2CF59204F4DF9006E9249 /* AppDelegate.swift in Sources */,
 				16F2CF6D204F550C006E9249 /* MenuViewController.swift in Sources */,
 			);
